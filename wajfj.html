@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+   /* background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);*/
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-color: #50cc13;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .bn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .bn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.bn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height:450px;
+    background: white;
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #0d3504;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #011c04;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #051902;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.search{
+    color: white;
+}
+
+/*page 2*/
+
+    .card{
+    background-color: #000;
+    background-color: #50cc13;
+    }
+       .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            
+       }
+         .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        /*video*/
+        .video-container {
+            text-align: center;
+            margin: 20px;
+           padding-top: 90px;
+            
+        }
+
+        /*grid*/
+
+        .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(6, 1fr);   
+    gap: 10px; 
+    width: 300px; 
+    margin: 0 auto; 
+    padding-right: 900px;
+    padding-top: 90px;
+}
+
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+    
+    
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">cookkie</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">QUALITY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>A Different Kind of <br><span>Grocery</span> <br>strore</h1>
+            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque 
+                 expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus 
+                <br> a quae totam ipsa illum minus laudantium?</p>
+
+                <button class="bn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Sign up</h2>
+                    <input type="name" name="name" placeholder="First Name">
+                    <input type="name" name="name" placeholder="last Name">
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Create Password ">
+                    <button class="btnn"><a href="#">Sign up</a></button>
+
+                    <p class="link"> Have an account<br>
+                    <a href="#">Login </a> here</a></p>
+                    
+
+                    
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+   
+<!--page2-->
+     <div class="card">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="AdobeStock_294521649 By Piman Khrutmuang.jpg" alt="Product 1" width="600px">
+           
+            <h3 style="color: #ff7200;">We Bring the Store To Your Door</h3>
+            
+            <button style="color: #ff7200;">See More options</button>
+        </div>
+        <!--scroll-->
+        <div class="scrolling-text">
+            <marquee behavior="scroll" direction="left" style="color: white; font-weight: bold;"> 
+                Fresh Food Perfect ouality .Special Offer Of This Weak.</marquee>
+        </div>
+    
+        
+        <div class="scrolling-text">
+            <marquee behavior="scroll" direction="right" style="color: white; font-weight: bold;">
+                Organic Fresh Fruit 50% Off. Get 25% off On Your Order</marquee>
+        </div>
+        <!--scroll-->
+        <div class="product">
+            <img src="istockphoto-1390517822-170667a.webp" alt="Product 2" width="600px">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <p>Price: $12.99</p>
+            <button>Add to Cart</button>
+        </div></div>
+
+
+        <div class="video-container">
+            <h2 style="text-align: center;">Watch Our Video</h2>
+            <video width="1100" height="500" controls>
+                <source src="HappyFresh - Online Grocery Shopping.mp4" type="video/mp4"> 
+                
+            </video>
+            <div class="text">
+                <h1 style="color: #fff;">UP TO 50% OFf<br>Dry Fruits , Breakfast & Cooking</h1>
+                
+            </div>
+        </div>
+    
+        <div class="grid-container">
+            <div class="grid-item"><img src="OATS.jpg" width="300px"><p>OATS <span style="color: red;">27% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="Grocery_SBC_muesli1_1.jpg" width="300px"><p>OATS <span style="color: red;">27% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="Nutella.jpg" width="300px"><p>Cereals & muesli UP To <span style="color: red;">50% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="grocery_sbc_coffee_440x460.jpg" width="300px"><p>COFFEE <span style="color: red;">50% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="Juices_SBC_1.jpg"width="300px" ><p>JUICES <span style="color: red;">50% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="Energy_drinks.jpg"width="300px"><p>ENERGY DRINKS <span style="color: red;">60% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="Oil_SBC_revised (1).jpg"width="300px"><p>GHEE <span style="color: red;">50% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="Baking_Supplies (1).jpg"width="300px"><p>BAKING SUPPLIES <span style="color: red;">40% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="Ready_SBC2_1.jpg"width="300px"><p>READY TO COOK <span style="color: red;">40% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="Sweets.jpg"width="300px"><p>SWEETS <span style="color: red;">50% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="Chocolates_SBC1_1.jpg"width="300px"><p>CHOCOLATE <span style="color: red;">40% OFF</span></p>
+            </div>
+            <div class="grid-item"><img src="hersheys.jpg"width="300px"><p>SYRUP <span style="color: red;">27% OFF</span></p>
+            </div>
+        </div>
+
+
+</body>
+</html>
